@@ -1,6 +1,6 @@
 package assignment;
 
-abstract class Animal {
+abstract class Animal implements ICalculatePortion{
 
     String name;
     int weightInGrams;

@@ -1,7 +1,7 @@
 package assignment;
 
-public class Cat extends Animal implements ICalculatePortion {
-    String foodType = "kattfoder";
+public class Cat extends Animal {
+    private String foodType = "kattfoder";
 
     public Cat(String name, int weightInGrams) {
         super(name, weightInGrams);
