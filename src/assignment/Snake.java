@@ -10,7 +10,8 @@ public class Snake extends Animal {
     // Polymorfism
     @Override
     public String getFoodType() {
-        return this.foodType;
+        // enum
+        return FoodType.SNAKEFOOD.rightFoodType;
     }
 
     @Override

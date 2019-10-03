@@ -1,7 +1,6 @@
 package assignment;
 
 public class Cat extends Animal {
-    private String foodType = "kattfoder";
 
     public Cat(String name, int weightInGrams) {
         super(name, weightInGrams);
@@ -10,7 +9,8 @@ public class Cat extends Animal {
     // Polymorfism
     @Override
     public String getFoodType() {
-        return this.foodType;
+        // enum
+        return FoodType.CATFOOD.rightFoodType;
     }
 
     @Override

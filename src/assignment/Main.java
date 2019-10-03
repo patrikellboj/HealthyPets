@@ -13,7 +13,7 @@ public class Main {
                     null,
                     "Vad är namnet på djuret som ska få mat?",
                     "HealthyPets dietcoach",
-                    3);
+                    JOptionPane.QUESTION_MESSAGE);
             if (petNameInput == null) {
                 break;
             } else {
