@@ -1,7 +1,8 @@
 package assignment;
 
 public class Snake extends Animal {
-    private String foodType = "ormpellets";
+    // inkapsling
+    private FoodType foodtype = FoodType.SNAKEFOOD;
 
     public Snake(String name, int weightInGrams) {
         super(name, weightInGrams);
@@ -11,7 +12,7 @@ public class Snake extends Animal {
     @Override
     public String getFoodType() {
         // enum
-        return FoodType.SNAKEFOOD.rightFoodType;
+        return foodtype.rightFoodType;
     }
 
     @Override
