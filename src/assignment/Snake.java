@@ -7,6 +7,7 @@ public class Snake extends Animal {
         super(name, weightInGrams);
     }
 
+    // Polymorfism
     @Override
     public String getFoodType() {
         return this.foodType;
