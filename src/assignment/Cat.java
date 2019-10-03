@@ -1,15 +1,18 @@
 package assignment;
 
-public class Cat extends Animal implements ICalculatePortion {
-    String foodType = "kattfoder";
+public class Cat extends Animal {
+    // inkapsling
+    private FoodType foodtype = FoodType.CATFOOD;
 
     public Cat(String name, int weightInGrams) {
         super(name, weightInGrams);
     }
 
+    // Polymorfism
     @Override
     public String getFoodType() {
-        return this.foodType;
+        // enum
+        return foodtype.rightFoodType;
     }
 
     @Override

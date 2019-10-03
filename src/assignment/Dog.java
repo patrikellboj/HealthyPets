@@ -1,7 +1,8 @@
 package assignment;
 
-public class Dog extends Animal implements ICalculatePortion {
-    String foodType = "hundfoder";
+public class Dog extends Animal {
+    // inkapsling
+    private FoodType foodtype = FoodType.DOGFOOD;
 
     public Dog(String name, int weightInGrams) {
         super(name, weightInGrams);
@@ -9,7 +10,8 @@ public class Dog extends Animal implements ICalculatePortion {
 
     @Override
     public String getFoodType() {
-        return this.foodType;
+        // enum
+        return foodtype.rightFoodType;
     }
 
     @Override

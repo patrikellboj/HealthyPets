@@ -1,15 +1,18 @@
 package assignment;
 
-public class Snake extends Animal implements ICalculatePortion {
-    String foodType = "ormpellets";
+public class Snake extends Animal {
+    // inkapsling
+    private FoodType foodtype = FoodType.SNAKEFOOD;
 
     public Snake(String name, int weightInGrams) {
         super(name, weightInGrams);
     }
 
+    // Polymorfism
     @Override
     public String getFoodType() {
-        return this.foodType;
+        // enum
+        return foodtype.rightFoodType;
     }
 
     @Override
